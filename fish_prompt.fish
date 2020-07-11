@@ -22,7 +22,7 @@ function fish_prompt
 	set color_bold_magenta (set_color --bold magenta)
 	set git (__fish_git_prompt "$color_bold_magenta^$color_reset%s")
 
-	echo -s ┌$user (set_color yellow)'@' $machine ':' $directory $git
+	echo -s (set_color white)┌$user (set_color yellow)'@' $machine ':' $directory $git
 
 	if [ $USER = "root" ]
 		set caret (set_color red ) "#"
