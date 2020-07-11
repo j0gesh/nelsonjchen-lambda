@@ -27,7 +27,7 @@ function fish_prompt
 	if [ $USER = "root" ]
 		set caret (set_color red ) "#"
 	else
-		set caret (set_color magenta) "=λ>"
+		set caret (set_color yellow) "=λ>"
 	end
 
 	echo -s $caret ' '(set_color normal)
